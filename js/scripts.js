@@ -1,10 +1,30 @@
 var findAndReplace = function(phrase, wordToReplace, replaceWith) {
 	var phrase = phrase;
+	var phraseLength = phrase.split(" ").length;
 	var wordToReplace = wordToReplace;
 	var replaceWith = replaceWith;
-	var replaced = phrase.replace(wordToReplace, replaceWith);
-	return replaced;
+	var replaced = ""
+	var i = 0
+	
+	while (i < phraseLength) {
+		replaced = phrase.replace(wordToReplace, replaceWith);
+		i += 1;
+		phrase = replaced;
+	} return replaced;
 }
+
+// var findAndReplace = function(phrase, wordToReplace, replaceWith) {
+// 	var phrase = phrase;
+// 	var phraseLength = phrase.split(" ").length;
+// 	var wordToReplace = wordToReplace;
+// 	var replaceWith = replaceWith;
+	
+// 	var replaced = phrase.replace(wordToReplace, replaceWith);
+// 	return replaced;
+// 	while(i < phraseLength) {
+		
+// 	}
+// }
 
 // var findAndReplace = function(phrase, wordToReplace, replaceWith) {
 // 	var splitPhrase = phrase.split(" ")
