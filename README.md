@@ -14,6 +14,7 @@
 <li>Follow the onscreen instructions to find and replace a word!</li>
 </ol>
 </p>
-#Bug reports: <p>The findAndReplace program has no known bugs at this time.  Any discovered bugs should be reoprted directly to the programs creator at thisisnotarealemail@gmail.com</p>
+#Bug reports: 
+<p>The findAndReplace program has no known bugs at this time.  Any discovered bugs should be reoprted directly to the programs creator at thisisnotarealemail@gmail.com</p>
 #Licenses and Copywright info: <p>ianofearth License.  Copyright 2015 ianofearth industries.</p>
 #<h2>You are not granted rights or licenses to the trademarks of ianofearth industries without the express written consent of ianofearth industries.</h2>
