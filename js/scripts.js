@@ -15,9 +15,10 @@ var findAndReplace = function(phrase, wordToReplace, replaceWith) {
 
 $(document).ready(function() {
 	$("form#userEntry").submit(function(event) {
-		var phraseEntered = $("input#phraseEntered")
-		var wordToReplace = $("input#wordToReplace")
-		var replaceWith = $("input#replaceWith")
+		var phraseEntered = $("input#phraseEntered").val();
+		var wordToReplace = $("input#wordToReplace").val();
+		var replaceWith = $("input#replaceWith").val();
+		var result = findAndReplace(phraseEntered, wordToReplace, replaceWith)
 
 		$(".replacedPhrase").text(result);
 
