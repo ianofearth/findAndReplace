@@ -12,4 +12,8 @@ describe("findAndReplace", function (phrase, wordToReplace, replaceWith) {
 	it("will replace multiple instances of wordToReplace with replaceWith", function() {
 		expect(findAndReplace("ian is cool, so cool", "cool", "awesome")).to.equal("ian is awesome, so awesome");
 	});
+
+	it("will change all instances of wordToReplace with replaceWith", function() {
+		expect(findAndReplace("cool cool cool cool", "cool", "awesome")).to.equal("awesome awesome awesome awesome");
+	});
 });
