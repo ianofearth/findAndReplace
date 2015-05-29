@@ -11,7 +11,21 @@ var findAndReplace = function(phrase, wordToReplace, replaceWith) {
 		i += 1;
 		phrase = replaced;
 	} return replaced;
-}
+};
+
+$(document).ready(function() {
+	$("form#userEntry").submit(function(event) {
+		var phraseEntered = $("input#phraseEntered")
+		var wordToReplace = $("input#wordToReplace")
+		var replaceWith = $("input#replaceWith")
+
+		$(".replacedPhrase").text(result);
+
+		$("#result").show();
+
+		event.preventDefault();
+	});
+});
 
 // var findAndReplace = function(phrase, wordToReplace, replaceWith) {
 // 	var splitPhrase = phrase.split(" ")
